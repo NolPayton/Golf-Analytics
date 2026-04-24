@@ -1,93 +1,64 @@
-# Golf-Analytics
-# 📊 PGA Performance Analysis: What Drives Scoring & Success
+# PGA Performance Analysis: What Drives Scoring and Success
 
-## 📌 Overview
-This project analyzes professional golf performance data to determine what factors most influence scoring and overall success. Using regression analysis and Tableau visualizations, the goal is to move beyond obvious relationships and identify what truly differentiates top-performing players.
-
----
-
-## 🎯 Key Questions
-
-### 1. Is putting or driving more important for scoring?
-Compare the relationship between putting, driving distance, and scoring performance.
-
-### 2. What metrics impact scoring the most?
-Use regression analysis to determine which variables have the strongest effect on scoring.
-
-### 3. Do top-performing players share similar performance profiles?
-Analyze the highest-earning players to determine whether success is driven by specialization or a balanced skill set.
+## Overview
+This project analyzes professional golf performance data to determine which factors most influence scoring and overall success. Using regression analysis and Tableau visualizations, the goal is to move beyond obvious relationships and identify what truly differentiates top-performing players.
 
 ---
 
-## 🛠️ Tools Used
-- **Excel** → Multiple regression analysis  
-- **Tableau** → Data visualization and comparison  
-- **Dataset** → PGA player performance metrics (putting, driving, scoring, earnings)
+## Key Questions
+
+1. Is putting or driving more important for scoring?
+2. What metrics have the strongest impact on scoring?
+3. Do top-performing players share similar performance profiles, or do they excel in specific areas?
 
 ---
 
-## 📈 Key Findings
-
-### 🟢 Putting vs Driving
-- Putting shows a **stronger and more consistent relationship** with scoring  
-- Driving distance has a **weaker and less differentiating impact**  
-- Lower putts per round are associated with better scoring outcomes  
+## Tools Used
+- Excel for regression analysis  
+- Tableau for data visualization  
+- PGA performance dataset including putting, driving, scoring, and earnings  
 
 ---
 
-### 🔵 Regression Results (Full Model)
-Using a multiple regression model including all key variables:
+## Key Findings
 
-- **Avg Putts Per Round (Strongest Impact)**  
-  - Largest coefficient (+0.205)  
-  - Highly significant  
-  - More putts → higher (worse) scores  
+### Putting vs Driving
+The visual analysis shows that putting has a stronger and more consistent relationship with scoring than driving distance. Players with fewer putts per round tend to have lower scoring averages, while driving distance shows a weaker and less differentiating relationship.
 
-- **Driving Accuracy (Drive %)**  
-  - Significant negative relationship (-0.045)  
-  - Higher accuracy → better scores  
+### Regression Results
+A multiple regression model was used to evaluate the impact of several performance metrics on scoring.
 
-- **Driving Distance**  
-  - Smaller but significant effect (-0.029)  
-  - Contributes to performance, but less than accuracy  
+- Average putts per round has the largest impact on scoring and is statistically significant  
+- Driving accuracy (drive percentage) is also significant and associated with better scoring  
+- Driving distance has a smaller but still meaningful effect  
+- One-putt percentage is not statistically significant when other variables are included  
 
-- **One-Putt Percentage**  
-  - Not statistically significant  
-  - Limited impact when other variables are considered  
+The model has an R² of approximately 0.12, indicating that while these variables matter, most variation in scoring is explained by other factors.
 
-📌 Model Performance:  
-- **R² ≈ 0.1186**  
-- Indicates that while these variables matter, **most variation in scoring is explained by other factors**
+### Top Player Analysis
+The highest-earning players were analyzed to determine whether success is driven by specialization or balance. The results show that top players have similar performance across putting, driving accuracy, and distance. Rather than dominating a single category, they maintain strong performance across all key metrics.
+
+This suggests that success at the highest level is driven by a balanced skill set rather than excelling in one area alone.
 
 ---
 
-### 🟡 Top Player Insight (Question 3)
-- The highest-earning players show **very similar performance across key metrics**
-- No single player dominates one category  
-- Instead, they demonstrate a **balanced skill set across putting, accuracy, and distance**
-
-👉 **Key Insight:**  
-Success at the highest level is not driven by excelling in one area, but by maintaining consistent performance across all aspects of the game.
+## Conclusions
+Putting is the most important driver of scoring performance. Driving contributes to performance, particularly through accuracy, but does not strongly differentiate top players. Overall success appears to come from consistency across multiple areas rather than specialization.
 
 ---
 
-## 🧠 Final Takeaways
-- Putting is the **most important driver** of scoring  
-- Driving matters, but is **less impactful and less differentiating**  
-- A **balanced performance profile** is key to success  
-- Core metrics explain only part of performance—other factors also play a major role  
+## Project Structure
+/data – raw dataset  
+/analysis – regression outputs  
+/visuals – Tableau dashboards  
+README.md – project documentation  
 
 ---
 
+## Notes
+The regression model explains a limited portion of scoring variation, indicating that additional factors such as course conditions, consistency, and tournament context likely play a role.
 
 ---
 
-## 📌 Notes & Limitations
-- The regression model has a relatively low R², meaning results should be interpreted with caution  
-- Additional variables (course difficulty, consistency, tournament conditions) could improve the model  
-- Findings are based on aggregate player data and may not capture situational performance  
-
----
-
-## 👤 Author
-Data analysis project focused on applying statistical and visualization tools to real-world performance insights.
+## Author
+This project was completed as part of a data analysis and business strategy assignment.
